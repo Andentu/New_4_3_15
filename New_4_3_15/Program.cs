@@ -4,7 +4,16 @@
     {
         static void Main(string[] args)
         {
-            var arr = new int[] { 5, 6, 9, 1, 2, 3, 4 };
+            var arr = new int[] { 5, -6, 9, 0, 2, 1, -4 };
+            int quantity = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] > 0)
+                {
+                    quantity++;
+                }
+            }
+            Console.Write("Количество положительных чисел в массиве: " + quantity);
 
         }
     }
